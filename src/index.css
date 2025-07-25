@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Tailwind-based scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  filter: drop-shadow(0px 0px 2px white);
+}
+
+::-webkit-scrollbar-track {
+  background: #fef2e4 /* Tailwind purple-500 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c2410c; /* Tailwind purple-800 */
+  border-radius: 10px;
+}
+
+body{
+    background-color: #2c2c2e;
+    overflow-y: hidden;
+}
