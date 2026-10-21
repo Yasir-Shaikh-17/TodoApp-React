@@ -126,6 +126,7 @@ function App() {
   }, [todo, todos]); // This means: run the effect again only if todo or todos change
 
   return (
+    // START
     <>
       <Navbar />
       <div className="addTodo md:container m-auto bg-orange-500 p-3 rounded-xl h-[86vh] my-3">
