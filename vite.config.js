@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/TodoApp-React/', // 👈 this must match your GitHub repo name
+  base: process.env.VERCEL ? '/' : '/TodoApp-React/', // '/' on Vercel, repo name on GitHub Pages
   plugins: [react(), tailwindcss()],
 })
